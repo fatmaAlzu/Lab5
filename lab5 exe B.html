@@ -1,17 +1,37 @@
+<!--
+=========================================================
+Name        : lab5_exe_C.html
+Assignment  : Lab 5, Exercise C
+Author(s)   : Fatma Alzuabidi
+Submission  : Feb 12th, 2024
+Description : Learn to integrate JavaScript with HTML to manipulate
+strings, perform arithmetic operations, and use
+variables.
+=========================================================
+-->
 <!DOCTYPE html>
-< html lang =" en " >
-< head >
-< meta charset =" UTF -8" >
-< meta name =" viewport " content =" width = device - width , initial -
-scale =1.0" >
-< title > JavaScript String and Variable Exercise </ title >
-</ head >
-< body >
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript String and Variable Exercise</title>
+</head>
+<body>
 <script>
-let FirstName = "Fatma";
+let firstName = "Fatma";
 let lastName = "Alzubaidi";
 let Age = 20;
+let fullName = firstName + " " + lastName;
+console.log(fullName);
+let currentYear = new Date().getFullYear();
+let birthYear = currentYear - Age;
+console.log(birthYear);
+console.log(fullName.length);
+console.log(fullName.toUpperCase());
+console.log(`Hello, my name is ${fullName} and I am ${Age} years old. I was born in ${birthYear}.`);
+
+let canVote = Age > 18 ? true : false;
+console.log(`I am eligible to vote: ${canVote}`);
 </script>
-</ body >
-</ html >
-b
+</body>
+</html>
