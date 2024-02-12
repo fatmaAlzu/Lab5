@@ -210,11 +210,7 @@ Description : DOM Elements.
 				// Task 1: Set the text content of all elements with the class 'companyName' and remove their border
 				for (var i = 0; i < companyElements.length; i++) {
 					var element = companyElements[i];
-					
-					// Set text content
 					element.textContent = "Kamand";
-					
-					// Remove border by setting border property to none
 					element.style.border = "none";
 				}
 
@@ -243,7 +239,7 @@ Description : DOM Elements.
 
 				// Task 6: Set the src attribute of the image
 				var logoImage = document.querySelector("img");
-				logoImage.setAttribute("src", "./images/new_logo.png");
+				logoImage.setAttribute("src", "./images/example.svg");
 
 				// Task 7: Add a new item in the navigation menu
 				var newNavItem = document.createElement("li");
